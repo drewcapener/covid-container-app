@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="number-line">Infected: <span id="infected-number" class="infected-number">0</span>/<span id="infected-total" class="infected-number">200</span></div>
+        <div class="number-line">Healthy: <span id="healthy-number" class="healthy-number">0</span>/<span id="healthy-total" class="healthy-number">200</span></div>
+        <div class="number-line">Recovered: <span id="recovered-number" class="recovered-number">0</span>/<span id="recovered-total" class="recovered-number">200</span></div>
+        <div class="number-line">Deceased: <span id="deceased-number">0</span>/<span id="deceased-total">200</span></div>
+      </div>
+      <div class="control-panel">
+        <div class="control-item">
+          <label for="vaccination">vaccination %: <span id="vaccination-rate">100</span></label>
+          <input type="range" id="vaccination" name="vaccination" min="20" max="120" value="20">
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas" class="canvas"></canvas>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+html, body {
+  background-color:black;
+  font-family: 'Roboto Mono', monospace;
+  height: 100%;
+  margin:0px;
+}
+
+.canvas {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 300 / 150;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  background: #505152;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.number-line {
+  display: flex;
+  color: white;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.number {
+  color: #D43785;
+}
+
+.infected-number {
+  color: #fa1807;
+}
+
+.healthy-number {
+  color: #F67540;
+}
+
+.recovered-number {
+  color: #9300f5;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding: 10px;
+  margin: 20px;
+  background-color: #505152;
+  border-radius: 10px;
+}
+
+.control-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5em;
+  color: #F67540;
+}
+
+.slider {
+  
+}
+
+.slider-channel {
+  position: absolute;
+  height: 10px;
+  width: 120px;
+  background-color: #313233;
+  top: 5px;
+  border-radius: 2px;
+}
+
+.slider-button {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #F640F6;
+  border-radius: 5px;
+  top: 0px;
+}
+
+#vaccination {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  width: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#vaccination::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #313233;
+  height: 10px;
+  width: 120px;
+  border-radius: 2px;
+}
+
+#vaccination::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background:  #F640F6;
+  border-radius: 5px;
+  margin: -5px 0 0 0;
+}
